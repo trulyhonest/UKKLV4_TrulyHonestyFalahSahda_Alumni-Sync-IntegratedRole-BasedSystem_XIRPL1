@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: url(../img/bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* --- HEADER (Tetap Merah Maroon Asli) --- */
+header {
+    background: #9a2424;
+    backdrop-filter: blur(10px);
+    padding: 12px 50px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav-container h2 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Bagian Kanan Baru: Nama & Tombol Logout */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-name-text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-logout-minimal {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: 0.3s;
+}
+
+.btn-logout-minimal:hover {
+    background: #fff;
+    color: #9a2424;
+}
+
+/* --- KONTEN --- */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.card {
+    background: white;
+    width: 100%;
+    max-width: 1100px;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card-header h3 {
+    color: #611515;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* --- ACTION BAR --- */
+.action-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-form {
+    display: flex;
+    background: #f5f5f5;
+    padding: 5px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+.search-form input {
+    padding: 8px 15px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+    width: 220px;
+}
+
+.search-form button {
+    background: #9a2424;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tambah {
+    background: #9a2424;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* --- TABEL --- */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #fdf2f2;
+    color: #9a2424;
+    border-bottom: 2px solid #f5caca;
+}
+
+td {
+    padding: 18px 15px;
+    background: #fff;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+}
+
+.edit {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.hapus {
+    background: #ffebee;
+    color: #d32f2f;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #ffffff;
+    font-size: 13px;
+}
